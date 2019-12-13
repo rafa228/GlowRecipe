@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.raflyjr.recipe">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.raflyjr.recipe.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.raflyjr.recipe.Picture" />
+        <activity android:name="com.raflyjr.recipe.Order" />
+        <activity android:name="com.raflyjr.recipe.Recipes" />
+        <activity android:name="com.raflyjr.recipe.DetailsActivity"/>
+        <activity android:name="com.raflyjr.recipe.VideoActivity"/>
+        <activity android:name="com.raflyjr.recipe.Cari"/>
+        <activity android:name="com.raflyjr.recipe.Video"/>
+    </application>
+
+</manifest>

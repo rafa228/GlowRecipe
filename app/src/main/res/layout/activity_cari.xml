@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/recipe_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masak Apa Hari Ini ?"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/finder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipe_title"
+        android:text="Saran untuk anda: EGG"
+        android:paddingTop="5dp"
+        android:textSize="14sp"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_below="@+id/finder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Kata Kunci ..."
+        android:textColor="#000"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:inputType="textCapWords" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_below="@id/search"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignRight="@id/search"
+        android:onClick="submitCari"
+        android:textColor="#FFFFFF"
+        android:background="#3F51B5"
+        android:text="CARI" />
+
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_below="@id/submit"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:background="#3F51B5"
+        android:text="Back to Menu" />
+
+</RelativeLayout>
